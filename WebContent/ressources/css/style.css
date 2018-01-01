@@ -1,0 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2F4F4F;
+	color: white;
+}
+
+input {
+	border-radius: 0.5em;
+	border: none;
+}
+
+input[type="text"] {
+	padding: 0.1em 0.5em;
+}
+
+header img:first-child {
+	width: 10vw;
+}
+
+header {
+	background-image: url(../images/bibli.jpg);
+	background-position: center center;
+}
+
+header img {
+	border-radius: 0.5em;
+	margin: 1vw;
+}
+
+.monCompte {
+	position: absolute;
+	right: 8%;
+	top: 10%;
+	background-color: blue;
+	color: white;
+	padding: 5px;
+}
+
+header nav {
+	margin-top: 1vw;
+	display: flex;
+	flew-flow: row warp;
+	justify-content: center;
+}
+
+header nav a {
+	text-decoration: none;
+	margin: 0 1vw;
+}
+
+.role {
+	background-color: orangered;
+	color: white;
+	text-align: center;
+}
+
+.formulaire_creation_compte{
+	margin-top : 40px;
+	text-align: center;
+}
+header nav input[type="button"] {
+	background: #8B4513;
+	border: 0px;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 0.5em 0.5em 0 0;
+	margin-bot: 20px;
+}
+
+.formulaire_creation_compte input[type="submit"]{
+	margin-top : 30px;
+	background-color : orangered;
+}
+.description input[type="submit"]{
+	margin-top : 30px;
+	background-color : orangered;
+}
+#find article {
+	padding: 1vw;
+	display: flex;
+	flew-flow: row warp;
+	justify-content: flex-end;
+}
+
+#find input[type="submit"] {
+	margin-right: 1vw;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	background-color: orangered;
+	color: white;
+}
+
+td, th, tr {
+	border: 1px solid white;
+	text-align: center;
+}
+
+.description {
+	height: 65vh;
+	text-align: center;
+	background-color: #A0522D;
+	padding-top: 40px;
+	border: 2px solid white;
+}
+
+.acces {
+	background-color: #CD853F;
+	color: white;
+	border: 2px solid white;
+	border-radius: 5px;
+	height: 65vh;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.class-id-livre, .class-penom-auteur, .class-titre-livre,
+	.class-dispo-livre {
+	background-color: #8B4513;
+	color: white;
+}

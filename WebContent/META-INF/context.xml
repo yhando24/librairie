@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+		<Resource
+      			name="jdbc/libraryhibernate"
+      			type="javax.sql.DataSource"
+      			username="drius759"
+      			password="potter759"
+      			driverClassName="com.mysql.jdbc.Driver"
+      			url="jdbc:mysql://localhost:3306/libraryhibernate"  			
+      			maxTotal="5" 
+      			maxWaitMillis="30000"
+      			MaxIdle="2" />
+      			 <!-- maxtotal nombre max de connection gerer en meme temps active -->
+      			<!--  temps dattente avant bug si on depasse le temps de connection
+      			 maxidle requete toujours ouverte 30 ici connection inutilise-->
+</Context>

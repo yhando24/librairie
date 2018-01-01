@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+<persistence-unit name="LibraryHibernate">
+	<provider> org.hibernate.jpa.HibernatePersistenceProvider</provider>
+	
+	<class>fr.youcef.model.beans.Author</class>
+	<class>fr.youcef.model.beans.Book</class>
+	<class>fr.youcef.model.beans.User</class>
+	
+	<properties>
+	<!-- 	<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+		
+		<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/hibernate" />
+		<property name="javax.persistence.jdbc.user" value="drius759" />
+		<property name="javax.persistence.jdbc.password" value="potter759" /> -->
+		
+		<!-- on donne directement le fichier datasource  au lieu de le reecrire-->
+		
+		<property name="hibernate.connection.datasource" value="java:comp/env/jdbc/libraryhibernate" />
+		
+		
+		<!-- gere automatiquement la creation de la BDD  et suppression c'est juste pour le developpement /  affiche les logs-->
+		
+<!-- 		 <property name="hibernate.hbm2ddl.auto" value="create-drop" />   sa cree au lancement et supprime quand on eteint (evite les reliquat) -->
+		<property name="hibernate.show_sql" value="false" />
+		
+	</properties>
+	</persistence-unit>
+</persistence>
