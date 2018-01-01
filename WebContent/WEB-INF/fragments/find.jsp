@@ -27,7 +27,7 @@
 		</form>
 
 
-	<!-- CHERCHER PAR AUTEUR -->
+	<!-- CHERCHER PAR AUTEUR  nom ou prenom-->
 		<form method="post"
 			action="<c:url value='/findbyauthor?bookauthor=${bookby.author.lastname }'/>"
 			id="form-findauthor">
